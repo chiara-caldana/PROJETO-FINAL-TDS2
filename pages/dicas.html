@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dicas e Quiz | Química e Geografia</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dicas.css">
+
+    <script src="../js/quiz.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="barra">
+
+            <div class="topo-esq">
+                <a href="../index.html" class="logo">
+                   QUIZ DE CONHECIMENTOS
+                </a>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="disciplinas.html">Disciplinas</a></li>
+                    <li><a href="carreiras.html">Carreiras</a></li>
+                    <li><a href="estagio.html">Estágio</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="dicas.html" aria-current="page">Dicas</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero">
+
+            <span class="etiqueta">APRENDA E TESTE SEUS CONHECIMENTOS</span>
+
+            <h1>Quiz de química e geografia!</h1>
+
+            <p>
+                Está preparado para testar seus conhecimentos?
+
+                Escolha uma matéria e responda às perguntas!
+            </p>
+
+        </section>
+
+        <section id="inicio">
+
+            <h2>Escolha sua matéria</h2>
+
+            <p>Temos 10 perguntas para cada disciplina.</p>
+
+            <div class="grade">
+
+                <div class="card verde">
+
+                    <h3>Química 🔬</h3>
+
+                    <p>
+                        Teste seus conhecimentos sobre elementos,
+                        substâncias e transformações químicas.
+                    </p>
+
+                    <button class="botao" onclick="iniciarQuiz('quimica')">
+                        Começar quiz
+                    </button>
+
+                </div>
+
+                <div class="card amarelo">
+
+                    <h3>Geografia 🌏</h3>
+
+                    <p>
+                        Responda perguntas sobre o planeta,
+                        os continentes e o espaço geográfico.
+                    </p>
+
+                    <button class="botao escuro" onclick="iniciarQuiz('geografia')">
+                        Começar quiz
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="areaQuiz" class="escondido">
+
+            <div class="card">
+
+                <h2 id="titulo"></h2>
+
+                <form id="formulario">
+
+                    <div id="perguntas"></div>
+
+                    <button type="button" class="botao"
+                        onclick="corrigir()">
+                        Enviar respostas
+                    </button>
+
+                </form>
+
+                <div id="resultado"></div>
+
+                <button id="voltar" class="botao escuro escondido"
+                    onclick="voltar()">
+                    Voltar às matérias
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>Portal de Matérias SESI/SENAI</p>
+
+        <p>Química e Geografia</p>
+
+    </footer>
+
+</body>
+</html>
